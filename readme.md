@@ -126,7 +126,7 @@ With our language-free fine-tuning and pre-trained Shifted Diffusion model, we a
 This approach can be easily applied to different domains/datasets, <strong>no image-text pair is needed </strong> in fine-tuning. 
 
 
-Below is a comparison between shifted diffusion and baseline diffusion on fine-tuned Stable Diffusion 2 model, where we evaluate the FID score and CLIP similarity (average similarity from CLIP ViT-B/16, ViT-B/32, RN-101) between generated images with input text/ground-truth target image.
+Below is a comparison between shifted diffusion and baseline diffusion on fine-tuned Stable Diffusion 2 model, where we evaluate the FID score and CLIP similarity (average similarity from CLIP ViT-B/16, ViT-B/32, RN-101) between generated images with input text/ground-truth target images.
 
 <div style="text-align: center;">     
     <img src="./imgs/FID_CLIP_img_img.png" alt="FID-CLIP-img-img" width="35%">  
