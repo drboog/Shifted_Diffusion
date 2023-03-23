@@ -205,7 +205,7 @@ with torch.no_grad():
     # neg_prompt_embeds = None
 
 
-    image = pipe(prompt=None, guidance_scale=5.0, num_inference_steps=100,
+    image = pipe(prompt=None, guidance_scale=2.0, num_inference_steps=100,
                  prompt_embeds=gen_emb.to(dtype=torch.float16), negative_prompt=negative_prompt,
                  negative_prompt_embeds=neg_prompt_embeds, img_emb=True).images[0]
     image.save(os.path.join("./test_imgs", f"prior_{text}.jpg"))
