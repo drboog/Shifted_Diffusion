@@ -37,7 +37,7 @@ To train a Shifted Diffusion model, run (choose hyper-parameters based on your d
 
     accelerate launch --mixed_precision="fp16" train.py
  
-We provide our pre-trained models [here](https://drive.google.com/drive/folders/1yix-GwcoxKxq6-sZwMK9xEv4lW8nWUas?usp=sharing).
+We provide our pre-trained shifted diffusion models [here](https://drive.google.com/drive/folders/1yix-GwcoxKxq6-sZwMK9xEv4lW8nWUas?usp=sharing).
 
 ## Shifted Diffusion + Stable Diffusion
 
@@ -78,7 +78,7 @@ Run
 
 (We did not optimize hyper-parameters, hyper-parameters follow [examples here](https://github.com/huggingface/diffusers/tree/main/examples))
 
-[Here are some slightly fine-tuned models](https://drive.google.com/drive/folders/1ZNR15C9I-Bx7jH-yoTa_RqnXMEJv0qQ5?usp=share_link), we used a total batch size of 8 * 8 * 1 = 64. 
+[Here are some slightly fine-tuned Stable Diffusion 2 models](https://drive.google.com/drive/folders/1ZNR15C9I-Bx7jH-yoTa_RqnXMEJv0qQ5?usp=share_link), we used a total batch size of 8 * 8 * 1 = 64. 
       
 ### Test fine-tuned Stable Diffusion model
 
