@@ -91,20 +91,16 @@ Run
 Examples of input/generated images on different datasets:
 
 <div style="text-align: center;"> 
-    <img src="./test_imgs/Brown_Pelican_0018_94432.jpg" alt="pelican" width="30%">
-    <img src="./test_imgs/re_Brown_Pelican_0018_94432.jpg" alt="re_pelican" width="30%">
-</div>
-<div style="text-align: center;"> 
-    <img src="./test_imgs/COCO_train2014_000000387672.jpg" alt="train" width="30%">
-    <img src="./test_imgs/re_COCO_train2014_000000387672.jpg" alt="re_train" width="30%">
+    <img src="./test_imgs/Brown_Pelican_0018_94432.jpg" alt="pelican" width="20%">
+    <img src="./test_imgs/re_Brown_Pelican_0018_94432.jpg" alt="re_pelican" width="20%"> &emsp;
+    <img src="./test_imgs/COCO_train2014_000000387672.jpg" alt="train" width="20%">
+    <img src="./test_imgs/re_COCO_train2014_000000387672.jpg" alt="re_train" width="20%">
 </div>    
 <div style="text-align: center;"> 
-    <img src="./test_imgs/902.jpg" alt="face" width="30%">
-    <img src="./test_imgs/re_902.jpg" alt="re_face" width="30%">
-</div>
-<div style="text-align: center;">     
-    <img src="./test_imgs/000000581921.jpg" alt="face" width="30%">
-    <img src="./test_imgs/re_000000581921.jpg" alt="re_face" width="30%">
+    <img src="./test_imgs/902.jpg" alt="face" width="20%">
+    <img src="./test_imgs/re_902.jpg" alt="re_face" width="20%"> &emsp;
+    <img src="./test_imgs/000000581921.jpg" alt="face" width="20%">
+    <img src="./test_imgs/re_000000581921.jpg" alt="re_face" width="20%">
 </div>
 <br>
 <br>
@@ -117,6 +113,10 @@ Run
 
 Below we provide a comparison.
  
+<div style="text-align: center;">     
+    <img src="./test_imgs/yellow-and-blue-train.jpg" alt="yellow-and-blue-train" width="80%">
+</div>
+
 A ground-truth image-text pair is shown, obtained from MS-COCO dataset. 
 
 Although Stable Diffusion 2 is able to perform zero-shot generation, the generation may not satisfy our requirement in terms of style, etc.
@@ -125,8 +125,12 @@ With our language-free fine-tuning and pre-trained Shifted Diffusion model, we a
 
 This approach can be easily applied to different domains/datasets, <strong>no image-text pair is needed </strong> in fine-tuning. 
 
+
+Below is a comparison between shifted diffusion and baseline diffusion on fine-tuned Stable Diffusion 2 model, where we evaluate the FID score and CLIP similarity (average similarity from CLIP ViT-B/16, ViT-B/32, RN-101) between generated images with input text/ground-truth target image.
+
 <div style="text-align: center;">     
-    <img src="./test_imgs/yellow-and-blue-train.jpg" alt="yellow-and-blue-train" width="80%">
+    <img src="./imgs/FID_CLIP_img_img.png" alt="FID-CLIP-img-img" width="35%">  
+    <img src="./imgs/FID_CLIP_img_text.png" alt="FID-CLIP-img-text" width="35%">
 </div>
 
 ## Shifted Diffusion + Lafite
