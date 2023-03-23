@@ -37,7 +37,7 @@ To train a Shifted Diffusion model, run (choose hyper-parameters based on your d
 
     accelerate launch --mixed_precision="fp16" train.py
  
-We provide our pre-trained shifted diffusion models [here](https://drive.google.com/drive/folders/1yix-GwcoxKxq6-sZwMK9xEv4lW8nWUas?usp=sharing).
+We provide our pre-trained Shifted Diffusion models [here](https://drive.google.com/drive/folders/1yix-GwcoxKxq6-sZwMK9xEv4lW8nWUas?usp=sharing).
 
 ## Shifted Diffusion + Stable Diffusion
 
