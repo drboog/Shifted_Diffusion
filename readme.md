@@ -79,6 +79,8 @@ Run
 (We did not optimize hyper-parameters, hyper-parameters follow [examples here](https://github.com/huggingface/diffusers/tree/main/examples))
 
 [Here are some slightly fine-tuned Stable Diffusion 2 models](https://drive.google.com/drive/folders/1ZNR15C9I-Bx7jH-yoTa_RqnXMEJv0qQ5?usp=share_link), we used a total batch size of 8 * 8 * 1 = 64. 
+
+(The models are "slightly fine-tuned", which means we only fine-tuned them for 10k~30k steps, just for example purpose. More fine-tuning steps with better tuned hyper-parameters will lead to better results.)
       
 ### Test fine-tuned Stable Diffusion model
 
