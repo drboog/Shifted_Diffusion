@@ -296,8 +296,8 @@ def main():
                       vocab_log_std_init=log_std_init, vocab_mean_init=mean_init, vocab_learnable=args.vocab_learnable,
                       vocab_std_scale=args.std_scale, vocab_lr_scale=args.vocab_lr_scale, vocab_exp=args.exp)
 
-    if args.gradient_checkpointing:
-        model.enable_gradient_checkpointing()
+    # if args.gradient_checkpointing: # TODO
+    #     model.enable_gradient_checkpointing()
 
     optimizer = torch.optim.AdamW(
         model.parameters(),
