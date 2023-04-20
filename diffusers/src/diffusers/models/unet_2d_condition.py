@@ -1184,7 +1184,7 @@ class UNet2DConditionModelEmb(ModelMixin, ConfigMixin, UNet2DConditionLoadersMix
 
         # 2.5 if we have finetuned it
         if img_emb:  # the input is image embedding now
-            encoder_hidden_states = self.emb_proj_layers(encoder_hidden_states.squeeze())
+            encoder_hidden_states = self.emb_proj_layers(encoder_hidden_states.reshape((encoder_hidden_states.shape[0], -1)))
             encoder_hidden_states = encoder_hidden_states.reshape((encoder_hidden_states.shape[0], self.proj_n, self.emb_dim))
 
         # 3. down
